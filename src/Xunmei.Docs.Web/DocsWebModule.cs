@@ -130,7 +130,8 @@ namespace Xunmei.Docs.Web
                     .Get<DocsResource>()
                     .AddBaseTypes(
                         typeof(AbpUiResource)
-                    );
+                    )
+                    .AddVirtualJson("/Localization/Resources/VoloDocs/Web");
 
                 options.Languages.Add(new LanguageInfo("cs", "cs", "Čeština"));
                 options.Languages.Add(new LanguageInfo("en", "en", "English"));
